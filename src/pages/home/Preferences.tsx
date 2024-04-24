@@ -30,7 +30,7 @@ const Prefence: React.FC<PrefenceProps> = () => {
 
   // apis
   const { mutate, isLoading } = addPreferences();
-  const { mutate: addCartMutate, isLoading: addCartLoading } = addCart();
+  const { mutate: addCartMutate } = addCart();
 
   const handlePreference = (val: string) => {
     setPreferences((prev) => {

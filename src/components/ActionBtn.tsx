@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import loader from "/svgs/loader.svg";
 import cart from "/svgs/cart.svg";
 import cartplus from "/svgs/cartplus.svg";
