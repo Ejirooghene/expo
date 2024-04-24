@@ -6,7 +6,6 @@ export { default as Modal } from "./Modal";
 export { default as Recommendation } from "./Recommendation";
 export { default as Loader } from "./ActionBtn";
 export { default as Quantity } from "./Quantity";
-export { default as Like } from "./Like";
 export { default as Checkbox } from "./Checkbox";
 export { default as Error } from "./Error";
 export { default as Badge } from "./Badge";
