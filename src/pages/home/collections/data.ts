@@ -1,0 +1,1 @@
+export const categories = ["Arts", "Bags", "Shoes", "Hats design", "Personal care products", "Furnitures", "Welding and fabrication", "Fashion designing", 'Others']
