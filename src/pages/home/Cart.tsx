@@ -41,7 +41,7 @@ const Cart: React.FC<CartProps> = () => {
     reference: new Date().getTime().toString(),
     email: email,
     amount: total * 100,
-    publicKey: "pk_test_1a220028474dec20a11b3506de943e3b2c796555",
+    publicKey: import.meta.env.VITE_APP_PUBLIC_KEY,
   };
 
   const handleDel = (info: { userId: string; itemId: string }) => {

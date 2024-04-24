@@ -23,7 +23,6 @@ const Products: React.FC<ProductsProps> = () => {
 
 
   const items = useOfflineExhibit((state) => state.items);
-  const quantity = useOfflineExhibit((state) => state.quantity);
 
   if (isLoading) {
     return <Modal />;

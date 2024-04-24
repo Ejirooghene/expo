@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { addPreferences, addCart } from "../../domain";
-import { useProfile, useOfflineExhibit } from "../../state";
+import { addPreferences } from "../../domain";
+import { useProfile } from "../../state";
 
 interface PrefenceProps {}
 
@@ -22,15 +22,15 @@ const Prefence: React.FC<PrefenceProps> = () => {
 
   // zustand
   const userId = useProfile((state) => state.info._id);
-  const items = useOfflineExhibit((state) => state.items);
-  const clearExhibit = useOfflineExhibit((state) => state.clearExhibit);
-  const id = useProfile((state) => state.info._id);
+  // const items = useOfflineExhibit((state) => state.items);
+  // const clearExhibit = useOfflineExhibit((state) => state.clearExhibit);
+  // const id = useProfile((state) => state.info._id);
 
   const navigate = useNavigate();
 
   // apis
   const { mutate, isLoading } = addPreferences();
-  const { mutate: addCartMutate, isLoading: addCartLoading } = addCart();
+  // const { mutate: addCartMutate,  } = addCart();
 
   const handlePreference = (val: string) => {
     setPreferences((prev) => {
@@ -55,10 +55,7 @@ const Prefence: React.FC<PrefenceProps> = () => {
   };
 
   const handleSubmit = async () => {
-    const ids = items.map((item) => item.id);
-
     // Execute both mutations simultaneously
-    await Promise.all([
       mutate(
         { userId, preferences },
         {
@@ -66,17 +63,17 @@ const Prefence: React.FC<PrefenceProps> = () => {
             navigate("/dashboard/collections/arts");
           },
         }
-      ),
-      addCartMutate(
-        { userId: id, itemId: ids },
-        {
-          onSuccess: () => {
-            clearExhibit();
-            navigate("/dashboard/collections/arts");
-          },
-        }
-      ),
-    ]);
+      // ),
+      // addCartMutate(
+      //   { userId: id, itemId: ids },
+      //   {
+      //     onSuccess: () => {
+      //       clearExhibit();
+      //       navigate("/dashboard/collections/arts");
+      //     },
+      //   }
+      // ),
+    );
   };
 
   return (
