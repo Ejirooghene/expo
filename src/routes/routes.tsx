@@ -36,7 +36,6 @@ const router = createBrowserRouter([
         element: <Collections />,
         children: [
           { path: "arts", element: <Arts /> },
-          // { path: "shoes", element: <Education /> },
           { path: "shoes", element: <Shoes /> },
           { path: "bags", element: <Bags /> },
           { path: "furnitures", element: <Furnitures /> },

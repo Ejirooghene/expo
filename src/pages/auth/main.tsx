@@ -14,7 +14,7 @@ const main: React.FC<mainProps> = () => {
   const [signup, setSignup] = useState<boolean>(false);
 
   return (
-    <div className="max-h-screen">
+    <div className="h-full">
       <div
         className="h-screen flex justify-center items-center bg-contain bg-center"
         style={{ backgroundImage: "url(/images/bg.jpg)" }}

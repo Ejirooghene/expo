@@ -8,10 +8,15 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
+/* body {
+  height: 100vh;
+} */
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-/* #root {
-  height: 100%;
-} */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

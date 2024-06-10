@@ -80,7 +80,7 @@ const Signup: React.FC<SignupProps> = () => {
   });
 
   return (
-    <div className="w-1/2 px-12 pt-6 oveflow-y-scroll">
+    <div className="w-1/2 px-12 pt-6 pb-10 overflow-y-auto hide-scrollbar">
       <p className="text-3xl text-black">Create an account</p>
       <Error isError={isError} errorMsg={""} />
       <div className="mt-5">

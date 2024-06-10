@@ -72,7 +72,7 @@ const Signin: React.FC<SigninProps> = ({ setSignup }) => {
   });
 
   return (
-    <div className="w-1/2 px-12 pt-12">
+    <div className="w-1/2 px-12 pt-12 pb-10 overflow-y-auto hide-scrollbar">
       <p className="text-3xl text-black">Welcome back</p>
       <Error isError={isError} errorMsg={(error as Error)?.message} />
       <form className="mt-5 overflow-scroll">
