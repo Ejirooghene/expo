@@ -11,7 +11,7 @@ const Main: React.FC<MainProps> = () => {
   return (
     <div className="">
       <div className="flex justify-between items-center">
-        <div className="flex gap-10 pl-6 py-6">
+        <div className="flex gap-3 pl-6 py-6">
           {categories.map((category: string) => (
             <NavLink
               key={category}
