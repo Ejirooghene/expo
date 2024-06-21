@@ -30,7 +30,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = () => {
             onBlur={handleBlur}
             onChange={handleChange}
             icon={mail}
-            helperText=''
+            helperText=""
           />
           <Button text="Continue" isLoading={false} disabled={true} onClick={() => {}} />
           <div className="flex items-center mt-8 cursor-pointer" onClick={() => gsap.to(".murale", { left: 0, duration: 0.3 })}>

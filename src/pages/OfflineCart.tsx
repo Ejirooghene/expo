@@ -151,6 +151,10 @@ const Cart: React.FC<CartProps> = () => {
                 {/* SELLER */}
                 <div className="flex gap-24 py-4 border-b border-b-gray-100">
                   <div className="flex items-center gap-4 mt-1">
+                    <p className="text-sm">
+                      {/* Seller:{" "}
+                      <span className="text-gray-500">{item.seller}</span> */}
+                    </p>
                   </div>
                   <div className="flex items-center gap-4 mt-1">
                     <img src={at} className="w-5" />
